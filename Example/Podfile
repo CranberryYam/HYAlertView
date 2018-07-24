@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HYAlertView_Example' do
+  pod 'HYAlertView', :path => '../'
+
+  target 'HYAlertView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
