@@ -1,0 +1,16 @@
+PODS:
+  - HYAlertView (0.1.0)
+
+DEPENDENCIES:
+  - HYAlertView (from `../`)
+
+EXTERNAL SOURCES:
+  HYAlertView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HYAlertView: e4dec6c6728f25fa2d8772622b4b9c23b869a239
+
+PODFILE CHECKSUM: 843612d01acd07fd5e63eea4b011d77ee1d014d6
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DialogView" customModule="ModalView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="164"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KaolaCir" translatesAutoresizingMaskIntoConstraints="NO" id="TBV-Xs-L3b">
+                    <rect key="frame" x="90" y="-51" width="87" height="87"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TBV-Xs-L3b" secondAttribute="height" multiplier="1:1" id="2NW-oj-8fR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caution!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ie-mY-E2K">
+                    <rect key="frame" x="69" y="43" width="127" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="46Q-Ha-XT4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you delete it, you can't restore it." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-do-oe9">
+                    <rect key="frame" x="16" y="64" width="235" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="jLW-Z7-ipX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nus-7Z-ksK">
+                    <rect key="frame" x="30" y="121" width="102" height="32"/>
+                    <color key="backgroundColor" red="0.28627450980000002" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Nus-7Z-ksK" secondAttribute="height" multiplier="51:16" id="2tC-qa-ub5"/>
+                    </constraints>
+                    <state key="normal" title="Cancle">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJT-0b-shp">
+                    <rect key="frame" x="143" y="121" width="102" height="32"/>
+                    <color key="backgroundColor" red="0.28627450980000002" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CJT-0b-shp" secondAttribute="height" multiplier="51:16" id="A59-v4-JEg"/>
+                    </constraints>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VIL-do-oe9" firstAttribute="top" secondItem="6Ie-mY-E2K" secondAttribute="bottom" id="0SZ-WB-Vr8"/>
+                <constraint firstItem="6Ie-mY-E2K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="69" id="6Fu-dd-j7g"/>
+                <constraint firstItem="6Ie-mY-E2K" firstAttribute="top" secondItem="TBV-Xs-L3b" secondAttribute="bottom" constant="7" id="8wy-fn-5Pz"/>
+                <constraint firstItem="Nus-7Z-ksK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="D8c-xj-NiY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6Ie-mY-E2K" secondAttribute="trailing" constant="71" id="HBG-09-XEN"/>
+                <constraint firstItem="TBV-Xs-L3b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="90" id="Hvj-uG-tqs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CJT-0b-shp" secondAttribute="trailing" constant="22" id="Jjh-Mz-Di3"/>
+                <constraint firstItem="VIL-do-oe9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bej-QW-dsZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Nus-7Z-ksK" secondAttribute="bottom" constant="11" id="cgm-No-RUk"/>
+                <constraint firstItem="TBV-Xs-L3b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-51" id="e1u-xy-6Ss"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CJT-0b-shp" secondAttribute="bottom" constant="11" id="lIb-OJ-bdj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TBV-Xs-L3b" secondAttribute="trailing" constant="90" id="pRG-Ua-1Ko"/>
+                <constraint firstItem="CJT-0b-shp" firstAttribute="top" secondItem="VIL-do-oe9" secondAttribute="bottom" constant="11" id="tqq-6O-jX2"/>
+                <constraint firstItem="Nus-7Z-ksK" firstAttribute="top" secondItem="VIL-do-oe9" secondAttribute="bottom" constant="11" id="uGF-r4-h8X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VIL-do-oe9" secondAttribute="trailing" constant="16" id="yQV-fZ-483"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="animalV" destination="TBV-Xs-L3b" id="ukI-Ip-vui"/>
+                <outlet property="bigL" destination="6Ie-mY-E2K" id="bgY-xS-W8B"/>
+                <outlet property="cancleBtn" destination="Nus-7Z-ksK" id="y9E-x0-PGT"/>
+                <outlet property="okBtn" destination="CJT-0b-shp" id="lh6-KW-aet"/>
+                <outlet property="smallL" destination="VIL-do-oe9" id="pm3-RZ-Ang"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="KaolaCir" width="87" height="87"/>
+    </resources>
+</document>
